@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto+Mono&display=swap');
+
+* {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+input {
+    border-radius: 21px;
+    padding: 10px;
+}
+
+table {
+    margin: auto;
+}
+
+.btn {
+    font-size: 40px;
+    width: 102px;
+    height: 90px;
+    /* margin: -0.75rem; */
+    margin-inline: 0.25rem;
+    margin-block: 0.25rem;
+}
+
+textarea {
+    margin: 1rem;
+}
+
+.table>:not(caption)>*>* {
+    padding: -0.5rem 0.5rem;
+}
