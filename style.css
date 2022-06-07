@@ -4,6 +4,53 @@
     font-family: 'Orbitron', sans-serif;
 }
 
+body {
+    color: black;
+    background-color: white;
+}
+
+.display #screen {
+    margin-top: 1.5rem;
+    margin-bottom: .5em;
+    /* width: 740px; */
+    width: 46rem;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+}
+
+nav {
+    opacity: 65%;
+}
+
+.dark-mode {
+    background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+    ;
+    background-size: 400% 400%;
+    animation: animate 7.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+
 .container {
     text-align: center;
 }
@@ -21,9 +68,10 @@ table {
     font-size: 40px;
     width: 102px;
     height: 90px;
-    /* margin: -0.75rem; */
+    border-radius: 1.25rem;
     margin-inline: 0.25rem;
     margin-block: 0.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 textarea {
@@ -32,4 +80,10 @@ textarea {
 
 .table>:not(caption)>*>* {
     padding: -0.5rem 0.5rem;
+}
+
+#close {
+    width: 130px;
+    height: 36px;
+    font-size: small;
 }
