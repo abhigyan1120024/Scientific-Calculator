@@ -16,16 +16,31 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <i class="fa-solid fa-calculator" width="30" height="24" class="d-inline-block align-text-top"></i>
-                Calculator
-            </a>
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
-                    onclick="darkMode()">
-                <label class="form-check-label" for="flexSwitchCheckDefault">Special Theme</label>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">
+                            <i class="fa-solid fa-calculator" width="30" height="24"
+                                class="d-inline-block align-text-top"></i>
+                            Calculator
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            History
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><div id="history"></div></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"
+                        onclick="darkMode()">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Special Theme</label>
+                </div>
             </div>
-        </div>
     </nav>
     <div class="container">
         <div class="display">

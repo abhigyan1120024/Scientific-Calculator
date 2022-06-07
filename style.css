@@ -26,6 +26,10 @@ body {
         inset -8px -8px 8px #ffffff;
 }
 
+#history {
+    padding: 1rem;
+}
+
 nav {
     opacity: 65%;
 }
